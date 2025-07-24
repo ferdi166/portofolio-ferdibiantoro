@@ -2,7 +2,7 @@ import React from 'react'
 import { FiGithub, FiExternalLink, FiFolder } from 'react-icons/fi'
 
 // Import gambar proyek
-import foodImg from '../assets/projects/food.png'
+import foodImg from '../assets/projects/food.PNG'
 import kebunImg from '../assets/projects/kebun.jpg'
 import kosImg from '../assets/projects/kos-laravel.PNG'
 import realImg from '../assets/projects/real-estate.PNG'
