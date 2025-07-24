@@ -53,8 +53,29 @@ const Hero = () => {
       aria-label="Beranda"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-6 py-6 sm:py-8 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-12 relative z-10">
-        {/* Teks Content */}
-        <div className="w-full md:w-1/2 text-center md:text-left space-y-4 sm:space-y-6 animate-fadeIn">
+        {/* Ilustrasi/Gambar - Akan muncul pertama di mobile */}
+        <div className="w-full md:w-1/2 order-1 md:order-2">
+          <div className="relative w-full max-w-[280px] sm:max-w-lg mx-auto">
+            <div className="absolute top-0 -left-4 w-64 h-64 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full mix-blend-soft-light filter blur-2xl opacity-50 animate-blob"></div>
+            <div className="absolute top-0 -right-4 w-64 h-64 bg-gradient-to-bl from-indigo-100 to-indigo-200 rounded-full mix-blend-soft-light filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-8 left-20 w-64 h-64 bg-gradient-to-tr from-purple-100 to-purple-200 rounded-full mix-blend-soft-light filter blur-2xl opacity-50 animate-blob animation-delay-4000"></div>
+            <div className="relative">
+              {/* Foto profil */}
+              <div className="h-64 sm:h-80 md:h-full p-2 group cursor-pointer">
+                  <img
+                    src={fotoProfile}
+                    alt="Foto profil Ferdi Biantoro"
+                  className="w-full h-full object-contain"
+                    loading="eager"
+                    title="Ferdi Biantoro - Full Stack Developer"
+                  />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Teks Content - Akan muncul kedua di mobile */}
+        <div className="w-full md:w-1/2 text-center md:text-left space-y-4 sm:space-y-6 animate-fadeIn order-2 md:order-1">
           <div className="space-y-1 sm:space-y-2">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
               Halo! <span className="inline-block animate-wave">👋</span>
@@ -92,27 +113,6 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-          </div>
-        </div>
-
-        {/* Ilustrasi/Gambar */}
-        <div className="w-full md:w-1/2 mt-6 sm:mt-8 md:mt-0">
-          <div className="relative w-full max-w-[280px] sm:max-w-lg mx-auto">
-            <div className="absolute top-0 -left-4 w-64 h-64 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full mix-blend-soft-light filter blur-2xl opacity-50 animate-blob"></div>
-            <div className="absolute top-0 -right-4 w-64 h-64 bg-gradient-to-bl from-indigo-100 to-indigo-200 rounded-full mix-blend-soft-light filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-20 w-64 h-64 bg-gradient-to-tr from-purple-100 to-purple-200 rounded-full mix-blend-soft-light filter blur-2xl opacity-50 animate-blob animation-delay-4000"></div>
-            <div className="relative">
-              {/* Foto profil */}
-              <div className="h-64 sm:h-80 md:h-full p-2 group cursor-pointer">
-                  <img
-                    src={fotoProfile}
-                    alt="Foto profil Ferdi Biantoro"
-                  className="w-full h-full object-contain"
-                    loading="eager"
-                    title="Ferdi Biantoro - Full Stack Developer"
-                  />
-              </div>
-            </div>
           </div>
         </div>
       </div>

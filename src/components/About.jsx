@@ -53,8 +53,8 @@ const About = () => {
                 {/* Main Content - Photo + Description Layout */}
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                        {/* Foto Section - Kiri */}
-                        <div className="relative order-2 lg:order-1">
+                        {/* Foto Section - Akan muncul pertama di mobile */}
+                        <div className="relative order-1 lg:order-1">
                             <div className="relative max-w-md mx-auto lg:mx-0">
                                 {/* Background decorative elements */}
                                 <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl transform rotate-3"></div>
@@ -78,8 +78,8 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* Description Section - Kanan */}
-                        <div className="order-1 lg:order-2 space-y-6">
+                        {/* Description Section - Akan muncul kedua di mobile */}
+                        <div className="order-2 lg:order-2 space-y-6">
                             {/* Nama dan Title */}
                             <div className="space-y-2">
                                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
