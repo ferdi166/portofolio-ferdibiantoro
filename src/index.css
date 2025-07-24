@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+/* Scroll smooth untuk seluruh halaman */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll smooth khusus untuk elemen dengan scroll */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling (opsional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
