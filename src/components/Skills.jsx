@@ -65,7 +65,7 @@ const Skills = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
                 <div className="text-center mb-12 sm:mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
                         Keahlian Teknis
                     </h2>
                     <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
@@ -78,13 +78,13 @@ const Skills = () => {
                     {skillCategories.map((category, index) => (
                         <div 
                             key={index}
-                            className="bg-white p-6 sm:p-8 rounded-xl transition-all duration-300 border border-gray-200"
+                            className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl transition-all duration-300 border border-gray-200"
                         >
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
                                     {category.title}
                                 </h3>
-                                <p className="text-sm text-gray-600">
+                                <p className="text-xs sm:text-sm text-gray-600">
                                     {category.description}
                                 </p>
                             </div>
@@ -99,10 +99,10 @@ const Skills = () => {
                                             className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-gray-50 transition-all duration-300 cursor-pointer"
                                             title={`${skill.name} - ${skill.description}`}
                                         >
-                                            <div className="text-3xl sm:text-4xl transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1">
+                                            <div className="text-2xl sm:text-3xl lg:text-4xl transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1">
                                                 {skill.icon}
                                             </div>
-                                            <span className="text-xs sm:text-sm text-gray-600 text-center font-medium">
+                                            <span className="text-xs text-gray-600 text-center font-medium">
                                                 {skill.name}
                                             </span>
                                         </div>

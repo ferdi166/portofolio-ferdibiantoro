@@ -77,14 +77,14 @@ const Hero = () => {
         {/* Teks Content - Akan muncul kedua di mobile */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4 sm:space-y-6 animate-fadeIn order-2 md:order-1">
           <div className="space-y-1 sm:space-y-2">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
               Halo! <span className="inline-block animate-wave">👋</span>
             </h1>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
               Saya <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent font-bold">Ferdi Prayoga Biantoro</span>
             </h1>
           </div>
-          <h2 className="text-lg sm:text-xl md:text-2xl text-gray-600">
+          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600">
             Seorang <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent font-semibold">{text}</span>
             <span className="animate-blink text-blue-600">|</span>
           </h2>
@@ -92,10 +92,10 @@ const Hero = () => {
             Membangun solusi digital yang inovatif dan berkualitas tinggi dengan fokus pada pengalaman pengguna yang luar biasa
           </p>
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4 pt-4 sm:pt-6 w-full sm:w-auto">
+          <div className="flex flex-row justify-center md:justify-start gap-2 sm:gap-3 md:gap-4 pt-4 sm:pt-6 w-full">
             <a
               href="#contact"
-              className="group w-full sm:w-auto px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl transition-all duration-300 text-sm sm:text-base font-semibold hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl hover:shadow-purple-500/25 hover:-translate-y-1 focus:ring-2 focus:ring-purple-400 focus:outline-none active:scale-95 flex items-center justify-center"
+              className="group w-full sm:w-auto px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl transition-all duration-300 text-base font-semibold hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl hover:shadow-purple-500/25 hover:-translate-y-1 focus:ring-2 focus:ring-purple-400 focus:outline-none active:scale-95 flex items-center justify-center"
               aria-label="Hubungi saya untuk kolaborasi"
             >
               <span>Hubungi Saya</span>
@@ -105,7 +105,7 @@ const Hero = () => {
             </a>
             <a
               href="#projects"
-              className="group w-full sm:w-auto px-6 sm:px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-xl transition-all duration-300 text-sm sm:text-base font-semibold hover:bg-purple-600 hover:text-white hover:shadow-2xl hover:shadow-purple-600/25 hover:-translate-y-1 focus:ring-2 focus:ring-purple-400 focus:outline-none active:scale-95 flex items-center justify-center bg-white/50 backdrop-blur-sm"
+              className="group w-full sm:w-auto px-6 sm:px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-xl transition-all duration-300 text-base font-semibold hover:bg-purple-600 hover:text-white hover:shadow-2xl hover:shadow-purple-600/25 hover:-translate-y-1 focus:ring-2 focus:ring-purple-400 focus:outline-none active:scale-95 flex items-center justify-center bg-white/50 backdrop-blur-sm"
               aria-label="Lihat portfolio proyek saya"
             >
               <span>Lihat Portfolio</span>

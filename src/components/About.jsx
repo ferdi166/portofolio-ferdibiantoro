@@ -82,7 +82,7 @@ const About = () => {
                         <div className="order-2 lg:order-2 space-y-6">
                             {/* Nama dan Title */}
                             <div className="space-y-2">
-                                <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
+                                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
                                     Ferdi Prayoga Biantoro
                                 </h3>
                                 {/* <p className="text-lg text-blue-600 font-semibold">
@@ -92,10 +92,10 @@ const About = () => {
 
                             {/* Deskripsi */}
                             <div className="space-y-4">
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                                     Seorang pengembang web full-stack yang bersemangat dengan pengalaman dalam membangun aplikasi web yang responsif dan user-friendly. Saya senang belajar teknologi baru dan berbagi pengetahuan dengan komunitas.
                                 </p>
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                                     Memiliki pengalaman dalam pengembangan aplikasi web menggunakan teknologi modern seperti React, Node.js, dan berbagai framework lainnya. Fokus pada penulisan kode yang bersih dan dapat dipertahankan.
                                 </p>
                             </div>
@@ -108,8 +108,8 @@ const About = () => {
                                             {detail.icon}
                                         </div>
                                         <div>
-                                            <p className="text-sm text-gray-500">{detail.label}</p>
-                                            <p className="text-gray-800 font-medium">{detail.value}</p>
+                                            <p className="text-xs sm:text-sm text-gray-500">{detail.label}</p>
+                                            <p className="text-sm sm:text-base text-gray-800 font-medium">{detail.value}</p>
                                         </div>
                                     </div>
                                 ))}
