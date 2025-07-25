@@ -92,7 +92,7 @@ const Hero = () => {
             Membangun solusi digital yang inovatif dan berkualitas tinggi dengan fokus pada pengalaman pengguna yang luar biasa
           </p>
           {/* CTA Buttons */}
-          <div className="flex flex-row justify-center md:justify-start gap-2 sm:gap-3 md:gap-4 pt-4 sm:pt-6 w-full">
+          {/* <div className="flex flex-row justify-center md:justify-start gap-2 sm:gap-3 md:gap-4 pt-4 sm:pt-6 w-full">
             <a
               href="#contact"
               className="group w-full sm:w-auto px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl transition-all duration-300 text-base font-semibold hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl hover:shadow-purple-500/25 hover:-translate-y-1 focus:ring-2 focus:ring-purple-400 focus:outline-none active:scale-95 flex items-center justify-center"
@@ -113,7 +113,7 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
