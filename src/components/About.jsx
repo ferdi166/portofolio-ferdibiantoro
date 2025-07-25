@@ -18,7 +18,7 @@ const About = () => {
         {
             icon: <FiCalendar className="w-5 h-5" />,
             label: "Pengalaman",
-            value: "3+ Tahun"
+            value: "2+ Tahun"
         }
     ]
 
