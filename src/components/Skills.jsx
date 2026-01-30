@@ -29,7 +29,7 @@ const Skills = () => {
                 { name: "Node.js", icon: <SiNodedotjs className="text-[#339933]" />, description: "Runtime JavaScript" },
                 { name: "Express", icon: <SiExpress className="text-[#000000]" />, description: "Framework web Node.js" },
                 { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" />, description: "Database SQL" },
-                { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" />, description: "Database SQL advanced" },                
+                { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" />, description: "Database SQL advanced" },
                 { name: "PHP", icon: <SiPhp className="text-[#777BB4]" />, description: "Bahasa server-side" },
                 { name: "Laravel", icon: <SiLaravel className="text-[#f54242]" />, description: "Framework PHP" }
             ]
@@ -39,7 +39,6 @@ const Skills = () => {
             description: "Tools untuk merancang UI/UX yang menarik dan user-friendly",
             skills: [
                 { name: "Figma", icon: <SiFigma className="text-[#F24E1E]" />, description: "Design & prototyping" },
-                { name: "Adobe XD", icon: <SiAdobexd className="text-[#FF61F6]" />, description: "UI/UX design" },
                 { name: "Canva", icon: <SiCanva className="text-[#00C4CC]" />, description: "Desain grafis" }
             ]
         },
@@ -56,8 +55,8 @@ const Skills = () => {
     ]
 
     return (
-        <section 
-            id="skills" 
+        <section
+            id="skills"
             className="py-16 sm:py-20 bg-gradient-to-b from-gray-50 to-white"
             role="region"
             aria-label="Keahlian"
@@ -76,7 +75,7 @@ const Skills = () => {
                 {/* Skills Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {skillCategories.map((category, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl transition-all duration-300 border border-gray-200"
                         >
@@ -91,11 +90,11 @@ const Skills = () => {
 
                             <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-6">
                                 {category.skills.map((skill, skillIndex) => (
-                                    <div 
-                                        key={skillIndex} 
+                                    <div
+                                        key={skillIndex}
                                         className="group relative"
                                     >
-                                        <div 
+                                        <div
                                             className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-gray-50 transition-all duration-300 cursor-pointer"
                                             title={`${skill.name} - ${skill.description}`}
                                         >
@@ -106,7 +105,7 @@ const Skills = () => {
                                                 {skill.name}
                                             </span>
                                         </div>
-                                        
+
                                         {/* Tooltip */}
                                         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full w-32 bg-gray-800 text-white text-xs rounded-md py-1 px-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 text-center z-10 pointer-events-none">
                                             {skill.description}
