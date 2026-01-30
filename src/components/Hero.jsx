@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import fotoProfile from '../assets/ferdi.png'
+import fotoProfile from '../assets/profile/ferdi.png'
 
 // Komponen Hero untuk landing page
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
     'UI/UX Designer',
     'Web Developer',
     'Mobile App Developer',
-    'Software Engineer',
+    // 'Software Engineer',
     'Frontend Developer',
     'Backend Developer'
   ]
@@ -62,13 +62,13 @@ const Hero = () => {
             <div className="relative">
               {/* Foto profil */}
               <div className="h-64 sm:h-80 md:h-full p-2 group cursor-pointer">
-                  <img
-                    src={fotoProfile}
-                    alt="Foto profil Ferdi Biantoro"
+                <img
+                  src={fotoProfile}
+                  alt="Foto profil Ferdi Biantoro"
                   className="w-full h-full object-contain"
-                    loading="eager"
-                    title="Ferdi Biantoro - Full Stack Developer"
-                  />
+                  loading="eager"
+                  title="Ferdi Biantoro - Full Stack Developer"
+                />
               </div>
             </div>
           </div>

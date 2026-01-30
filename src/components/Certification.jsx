@@ -7,6 +7,7 @@ import dasarProgCert from '../assets/certificates/dasarprog.png'
 import dasarJsCert from '../assets/certificates/dasarjs.png'
 import frontendCert from '../assets/certificates/frontendpemula.png'
 import sqlCert from '../assets/certificates/sqldicoding.png'
+import flutterCert from '../assets/certificates/flutter-pemula.png'
 
 const Certification = () => {
     // Data sertifikat - bisa disesuaikan dengan sertifikat yang dimiliki
@@ -18,7 +19,7 @@ const Certification = () => {
             icon: <FaCode className="w-8 h-8" />,
             color: 'from-blue-500 to-cyan-500',
             description: 'Sertifikasi pengembangan aplikasi React modern',
-            image: jpCert,            
+            image: jpCert,
         },
         {
             title: 'Belajar Dasar Pemrograman',
@@ -59,6 +60,16 @@ const Certification = () => {
             description: 'Sertifikasi Belajar Dasar Structured Query Language (SQL)',
             image: sqlCert,
             link: 'https://www.dicoding.com/certificates/98XWLQ75WZM3'
+        },
+        {
+            title: 'Belajar Membuat Aplikasi Flutter untuk Pemula',
+            issuer: 'Dicoding Indonesia',
+            date: '2026',
+            icon: <FaAward className="w-8 h-8" />,
+            color: 'from-purple-500 to-pink-500',
+            description: 'Sertifikasi Belajar Membuat Aplikasi Flutter untuk Pemula',
+            image: flutterCert,
+            link: 'https://www.dicoding.com/certificates/81P2501LNPOY'
         }
     ]
 
@@ -94,15 +105,15 @@ const Certification = () => {
                     {certifications.map((cert, index) => (
                         <div
                             key={index}
-                            className="group relative bg-white backdrop-blur-xl rounded-2xl border-2 border-gray-100 hover:border-gray-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden"
+                            className="group relative bg-white backdrop-blur-xl rounded-2xl border-2 border-gray-100 hover:border-gray-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden flex flex-col h-full"
                         >
                             {/* Gradient Background on Hover */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                            
+
                             {/* Certificate Image */}
                             <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
-                                <img 
-                                    src={cert.image} 
+                                <img
+                                    src={cert.image}
                                     alt={`Sertifikat ${cert.title}`}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     onError={(e) => {
@@ -122,7 +133,7 @@ const Certification = () => {
                             </div>
 
                             {/* Content */}
-                            <div className="relative z-10 p-6">                                
+                            <div className="relative z-10 p-6 flex flex-col flex-1 justify-between">
                                 {/* Certificate Info */}
                                 <div className="space-y-2">
                                     <h3 className="text-lg font-bold text-gray-800 group-hover:text-gray-900 transition-colors duration-300">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiMapPin, FiMail, FiPhone, FiCalendar, FiAward, FiCode } from 'react-icons/fi'
-import fotoProfile from '../assets/ferdi.png'
+import fotoProfile from '../assets/profile/ferdi.png'
 
 const About = () => {
     // Data informasi personal
@@ -23,18 +23,18 @@ const About = () => {
     ]
 
     // Data keahlian utama
-    const mainSkills = [
-        "Full Stack Development",
-        "React & Node.js",
-        "UI/UX Design",
-        "Mobile Development",
-        "Database Management",
-        "API Development"
-    ]
+    // const mainSkills = [
+    //     "Full Stack Development",
+    //     "React & Node.js",
+    //     "UI/UX Design",
+    //     "Mobile Development",
+    //     "Database Management",
+    //     "API Development"
+    // ]
 
     return (
-        <section 
-            id="about" 
+        <section
+            id="about"
             className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-white"
             role="region"
             aria-label="Tentang Saya"
@@ -59,16 +59,16 @@ const About = () => {
                                 {/* Background decorative elements */}
                                 <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl transform rotate-3"></div>
                                 <div className="absolute -bottom-4 -right-4 w-full h-full bg-gradient-to-tr from-orange-100 to-pink-100 rounded-2xl transform -rotate-3"></div>
-                                
+
                                 {/* Main photo container */}
                                 <div className="relative bg-white p-6 rounded-2xl shadow-lg">
-                                    <img 
+                                    <img
                                         src={fotoProfile}
                                         alt="Foto profil Ferdi Biantoro"
                                         className="w-full h-auto object-cover rounded-xl"
                                         loading="lazy"
                                     />
-                                    
+
                                     {/* Badge */}
                                     <div className="absolute -bottom-3 -right-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                                         <FiCode className="inline w-4 h-4 mr-1" />
@@ -135,7 +135,7 @@ const About = () => {
 
                             {/* CTA Button */}
                             <div className="pt-4">
-                                <a 
+                                <a
                                     href="#contact"
                                     className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                                 >
